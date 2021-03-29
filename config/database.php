@@ -128,9 +128,9 @@ return [
 
         'default' => [
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', '6379'),
+            'host' => env('REDIS_HOST', 'ec2-18-210-208-168.compute-1.amazonaws.com'),
+            'password' => env('REDIS_PASSWORD', 'p1d7bed7fbab3976d102d2d1ff3e467684f348a957469c210c843a9b6964982ec'),
+            'port' => env('REDIS_PORT', 'p1d7bed7fbab3976d102d2d1ff3e467684f348a957469c210c843a9b6964982ec'),
             'database' => env('REDIS_DB', '0'),
         ],
 
