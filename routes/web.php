@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/create-post', function () {
+    $user = User::first();
+
+    $user->posts()->create([
+        'title' => "Um titulo bem legal",
+        "body" => "Uma descrição bem legalzinha!"
+    ]);
+
+
+    return 'ok';
 });
