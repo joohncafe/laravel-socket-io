@@ -26,3 +26,8 @@ Route::get('/create-post', function () {
 
     return 'ok';
 });
+
+
+Route::get('/', function(){
+    return view('welcome');
+});
