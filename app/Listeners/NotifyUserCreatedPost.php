@@ -26,6 +26,6 @@ class NotifyUserCreatedPost
      */
     public function handle(PostCreated $event)
     {
-        dd($event->post);
+        // dd($event->post);
     }
 }

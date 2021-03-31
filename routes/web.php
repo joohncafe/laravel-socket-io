@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +19,8 @@ Route::get('/create-post', function () {
     $user = User::first();
 
     $user->posts()->create([
-        'title' => "Um titulo bem legal teste",
-        "body" => "Uma descrição bem legalzinha!"
+        'title' => "Um titulo bem legal teste " . Str::random(3) ,
+        "body" => "Uma descrição bem legalzinha!" .  Str::random(7)
     ]);
 
 
