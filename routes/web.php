@@ -18,7 +18,7 @@ Route::get('/create-post', function () {
     $user = User::first();
 
     $user->posts()->create([
-        'title' => "Um titulo bem legal",
+        'title' => "Um titulo bem legal teste",
         "body" => "Uma descrição bem legalzinha!"
     ]);
 
