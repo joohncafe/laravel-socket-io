@@ -1,10 +1,10 @@
 {
-	"authHost": "http://laravel-socket-io.herokuapp.com",
+	"authHost": "http://laravel-socket-io.test",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
-			"appId": "5f947aeb42813f78",
-			"key": "eb894665e86687792e29e94b8b993835"
+			"appId": "fb2ff5ca801eb27b",
+			"key": "17fc65b1ff7d6998db6301a6c1934130"
 		}
 	],
 	"database": "redis",
@@ -30,7 +30,7 @@
 	},
 	"apiOriginAllow": {
 		"allowCors": true,
-		"allowOrigin": "http://laravel-socket-io.herokuapp.com",
+		"allowOrigin": "http://laravel-socket-io.test",
 		"allowMethods": "GET, POST",
 		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
 	}
