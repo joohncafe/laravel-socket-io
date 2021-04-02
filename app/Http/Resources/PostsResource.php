@@ -15,7 +15,7 @@ class PostsResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'name' => $this->title,
+            'title' => $this->title,
             'body' => $this->body
         ];
     }
