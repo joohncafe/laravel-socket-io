@@ -1,8 +1,9 @@
 <template>
         <div>
-            <h1>Posts</h1>
+            <h1 class="text-center text-3x1 uppercase font-black py-8">Posts</h1>
 
-            <div v-for="(post, index) in posts.data" :key="index">
+            <div class="bg-white w-full p-4 my-4 rounded-xl shadow border"
+             v-for="(post, index) in posts.data" :key="index">
                 {{post.title}}
             </div>
 
