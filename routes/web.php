@@ -3,6 +3,7 @@
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,5 @@ Route::get('/create-post', function () {
 });
 
 
-Route::get('/', function(){
-    return view('welcome');
-});
+Route::get('/', [SiteController::class, 'index'])->name('site.index');
+
